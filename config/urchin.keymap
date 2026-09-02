@@ -48,10 +48,16 @@
 
 	combos {
 		compatible = "zmk,combos";
-		// Static recovery entry, independent of saved Studio keymaps.
-		combo_studio_unlock {
+		// Outer thumb keys provide a fast Escape chord on every layer.
+		combo_escape {
 			timeout-ms = <200>;
 			key-positions = <30 33>;
+			bindings = <&kp ESC>;
+		};
+		// Inner thumb keys provide a static recovery entry for Studio.
+		combo_studio_unlock {
+			timeout-ms = <200>;
+			key-positions = <31 32>;
 			bindings = <&studio_unlock>;
 		};
 	};
