@@ -19,9 +19,9 @@
 &mt {
 	// Favor normal letter rolls while retaining deliberate modifier chords.
 	flavor = "balanced";
-	require-prior-idle-ms = <125>;
-	tapping-term-ms = <280>;
-	quick-tap-ms = <175>;
+	require-prior-idle-ms = <150>;
+	tapping-term-ms = <250>;
+	quick-tap-ms = <200>;
 };
 
 / {
